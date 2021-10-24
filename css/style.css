@@ -123,6 +123,15 @@ header ul a:hover {
   margin-top: 0.5rem;
 }
 
+.product__info p {
+  z-index: 2;
+}
+
+.product__info p:hover {
+  color: black;
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
   flex-shrink: 0;
