@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--clr-background);
+  background-image: url("../img/double-bubble.png");
+  background-blend-mode: soft-light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+}
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.container__product {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .container__product {
+    width: 25%;
+  }
+}
