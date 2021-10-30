@@ -1,6 +1,6 @@
 /* Header */
 
-header a {
+.nav__link {
   font-size: 1.3rem;
   text-decoration: none;
   color: var(--clr-primary);
@@ -8,7 +8,7 @@ header a {
   transition: all 0.3s ease;
 }
 
-header ul a:hover {
+.nav__link:hover {
   color: var(--clr-accent);
   border-bottom: 1px solid var(--clr-accent);
   transition: all 0.3s ease;

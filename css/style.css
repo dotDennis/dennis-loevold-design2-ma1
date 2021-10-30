@@ -1,6 +1,7 @@
 @import "./components/variables.css";
 @import "./components/base.css";
+@import "./components/typography.css";
 @import "./components/nav.css";
 @import "./components/footer.css";
 @import "./components/home.css";
-@import "./components/product.css";
+@import "./components/products.css";

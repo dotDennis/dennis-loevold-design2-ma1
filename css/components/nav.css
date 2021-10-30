@@ -4,7 +4,7 @@ header {
   flex-direction: row;
 }
 
-header nav {
+.nav {
   display: flex;
   width: 90%;
   justify-content: space-between;
@@ -14,16 +14,62 @@ header nav {
   border-bottom: 1px solid black;
 }
 
-header ul {
+.nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
   gap: 40px;
 }
 
+.current {
+  color: var(--clr-accent);
+}
+
+.burger {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--clr-primary);
+  z-index: 10;
+}
+
+.burger:hover {
+  color: var(--clr-accent);
+}
+
+@media (max-width: 999px) {
+  .nav ul {
+    display: none;
+    position: fixed;
+    right: -150%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    min-width: 300px;
+    z-index: 5;
+    background: rgba(190, 176, 153, 0.98);
+    text-align: center;
+    padding: 50rem 0;
+    overflow: hidden;
+  }
+  .nav ul li {
+    margin: 2rem 0;
+  }
+  .nav ul.opened {
+    display: block;
+    right: 0;
+  }
+}
+
 @media (min-width: 1000px) {
-  header nav {
+  .nav {
     width: 75%;
+  }
+  .nav ul {
+    display: flex;
+  }
+  .burger {
+    display: none;
   }
 }
