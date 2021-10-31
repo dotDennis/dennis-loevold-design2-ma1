@@ -1,13 +1,11 @@
 // Making the hamburger open and close
 
-const burger = document.querySelector("button.burger i");
+const burger = document.querySelector("button.burger img");
 const nav = document.querySelector(".nav ul");
-
-console.log(burger);
 
 burger.addEventListener("click", handleClick);
 
-function handleClick(event) {
+function handleClick() {
   if (burger.dataset.collapsed === "true") {
     handleOpen();
   } else {
@@ -18,11 +16,11 @@ function handleClick(event) {
 function handleOpen() {
   nav.classList.add("opened");
   burger.dataset.collapsed = false;
-  burger.className = "fas fa-times";
+  burger.src = "../img/icons/close.svg";
 }
 
 function handleClose() {
   nav.classList.remove("opened");
-  burger.className = "fas fa-bars";
+  burger.src = "../img/icons/open.svg";
   burger.dataset.collapsed = true;
 }
