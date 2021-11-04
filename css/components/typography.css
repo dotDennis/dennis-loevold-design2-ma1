@@ -26,6 +26,7 @@ body {
 h1 {
   font-family: "Crimson Text", serif;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .product__info p {
