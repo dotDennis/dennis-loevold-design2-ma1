@@ -15,12 +15,14 @@ function handleClick() {
 
 function handleOpen() {
   nav.classList.add("opened");
-  burger.dataset.collapsed = false;
   burger.src = "../img/icons/close.svg";
+  document.querySelector("button.burger").classList.add("open");
+  burger.dataset.collapsed = false;
 }
 
 function handleClose() {
   nav.classList.remove("opened");
   burger.src = "../img/icons/open.svg";
+  document.querySelector("button.burger").classList.remove("open");
   burger.dataset.collapsed = true;
 }

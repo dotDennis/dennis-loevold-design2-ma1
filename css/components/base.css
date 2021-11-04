@@ -66,7 +66,7 @@ main {
   border-radius: 0 0 1rem 1rem;
 }
 
-.product__extra button {
+.product__button {
   border: none;
   border-radius: 0 0 1rem 1rem;
   padding: 0.7rem 0;
@@ -76,7 +76,7 @@ main {
   text-transform: uppercase;
 }
 
-.product__extra button:hover {
+.product__button:hover {
   background: var(--clr-accent);
 }
 
